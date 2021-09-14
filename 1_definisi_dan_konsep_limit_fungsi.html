@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="id">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1. Definisi dan Konsep Limit Fungsi | E-modul Limit Fungsi </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Ayu Novita" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="geogebra-activity.css" />
+<script type="text/javascript" src="geogebra-activity.js"></script>
+<link rel="stylesheet" type="text/css" href="scrambled-list.css" />
+<script type="text/javascript" src="scrambled-list.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Skip navigation</a></p>
+<header id="header" ><div id="headerContent">E-modul Limit Fungsi</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">E-modul Limit Fungsi</a></li>
+   <li><a href="petunjuk_penggunaan_emodul.html" class="no-ch">Petunjuk Penggunaan E-modul</a></li>
+   <li><a href="kompetensi_dasar_dan_tujuan_pembelajaran.html" class="no-ch">Kompetensi Dasar dan Tujuan Pembelajaran</a></li>
+   <li class="current-page-parent"><a href="materi_pembelajaran.html" class="current-page-parent daddy">Materi Pembelajaran</a>
+   <ul>
+      <li id="active"><a href="1_definisi_dan_konsep_limit_fungsi.html" class="active no-ch">1. Definisi dan Konsep Limit Fungsi</a></li>
+      <li><a href="2_sifat_limit_fungsi.html" class="no-ch">2. Sifat Limit Fungsi</a></li>
+      <li><a href="3_limit_fungsi_aljabar.html" class="no-ch">3. Limit Fungsi Aljabar</a></li>
+      <li><a href="4_limit_fungsi_trigonometri.html" class="no-ch">4. Limit Fungsi Trigonometri</a></li>
+   </ul>
+   </li>
+   <li><a href="rangkumlah.html" class="no-ch">Rangkumlah!</a></li>
+   <li><a href="uji_kompetensi.html" class="no-ch">Uji Kompetensi</a></li>
+   <li><a href="daftar_pustaka.html" class="no-ch">Daftar Pustaka</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="materi_pembelajaran.html" class="prev"><span><span>&laquo; </span>Sebelumnya</span></a> <span class="sep">| </span><a href="2_sifat_limit_fungsi.html" class="next"><span>Lanjut<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1. Definisi dan Konsep Limit Fungsi</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id21">
+<div class="iDevice emphasis0">
+<div id="ta21_85" class="block iDevice_content">
+<p style="text-align: justify;">  <span style="font-family: 'times new roman', times, serif; font-size: 14pt;">    Pada suatu hari Kenzy dan Tasya sedang belajar bersama mengenai materi “Limit Fungsi”. Sebelum mempelajari mengenai limit dari sebuah fungsi, mereka mencari tahu apa yang dimaksud dengan “limit” terlebih dahulu. Kemudian mereka menonton video berikut. </span></p>
+<p><span style="font-family: 'times new roman', times, serif; font-size: 14pt;"><video width="320" height="240" style="display: block; margin-left: auto; margin-right: auto;" controls="controls" class="mediaelement">
+<source src="Limit_Fungsi.mp4" type="video/mp4" /></video></span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">Setelah mereka menonton video tersebut, Kenzy pun memberikan pertanyaan kepada Tasya yang berkaitan dengan pengertian limit.</span></p>
+<p><span style="font-family: 'times new roman', times, serif; font-size: 14pt;"><img src="img1.png" width="267" height="189" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">Kenzy  : “Sya, divideo tadi dijelaskan bahwa limit itu merupakan pendekatan terhadap suatu hal. Nah aku ada pertanyaan nih buat kamu.”</span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">Tasya   : “Wah, seru nih.”</span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">Kenzy  : “Coba kamu sebutkan bilangan bulat manakah yang terdekat dengan 4?”</span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">Tasya   : “Tentu saja jawabannya adalah 3 atau 5.”</span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">Kenzy  : “Good. Coba tebak lagi Sya. Bilangan real manakah yang terdekat dengan 4?”</span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">Tasya   : “mmm, ....” (Tasya terlihat bingung).</span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">      Berdasarkan percakapan diatas, Kenzy bertanya kepada Tasya mengenai bilangan real manakah yang terdekat dengan 4? Jika Tasya menjawab bilangan tersebut adalah 3 atau 5, maka masih ada bilangan real lainnya yang dekat dengan 4, bahkan sampai tak berhingga banyaknya bilangan real yang dekat dengan 4.</span></p>
+<p><span style="font-family: 'times new roman', times, serif; font-size: 14pt;"><strong>Coba perhatikan ilustrasi berikut!</strong></span></p>
+<p><span style="font-family: 'times new roman', times, serif; font-size: 14pt;"><strong><img src="img2.1.png" width="630" height="188" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></strong></span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">      Berdasarkan ilustrasi diatas, pada garis bilangan pertama terlihat bahwa bilangan real yang dekat dengan 4 adalah 3,75 atau 4,25. Namun, jawaban tersebut masih kurang tepat. Jika diperbesar maka akan tampak bilangan real yang lebih dekat lagi dengan 4. Seperti pada garis bilangan kedua ditunjukkan bahwa 3,99 atau 4,01 merupakan bilangan real yang lebih dekat dengan 4. Namun jawaban itu juga masih kurang tepat, karena jika dilakukan perbesaran lagi, maka akan tampak bahwa ada lagi bilangan real lainnya yang lebih dekat dengan 4. Seperti pada garis bilangan ketiga, tampak bahwa 3,9999 atau 4,0001 merupakan bilangan real yang lebih dekat lagi dengan 4. Jika dilakukan perbesaran lagi tentu akan ada lagi bilangan real lainnya yang lebih dekat dengan 4.</span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">      Dari ilustrasi diatas, pada garis bilangan terdapat sekelompok bilangan real yang mendekati 4 dari kiri ataupun dari kanan. Jika <em>x</em> dimisalkan sebagai sekelompok bilangan real yang mendekati 4 maka dapat disebut <em>x </em>mendekati 4 atau dapat ditulis <em>x </em><img alt="" src="eXe_LaTeX_math_1.gif" width="16" height="9" style="text-align: center;" /> 4. Jika<em> x</em> adalah semua bilangan yang mendekati 4 dari kiri dapat ditulis <em>x</em> <img alt="" src="eXe_LaTeX_math_1.gif" width="16" height="9" style="text-align: center;" /> <img alt="" src="eXe_LaTeX_math_7.gif" width="24" height="16" style="text-align: center;" />, sedangkan apabila <em>x</em> adalah semua bilangan yang mendekati 4 dari kanan dapat ditulis<em> x </em><img alt="" src="eXe_LaTeX_math_1.gif" width="16" height="9" style="text-align: center;" /> <img alt="" src="eXe_LaTeX_math_13.gif" width="24" height="16" style="text-align: center;" />. Pemaparan tersebut merupakan ilustrasi limit sebagai pendekatan nilai. Selanjutnya kita akan mempelajari mengenai limit dari sebuah fungsi. </span></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id22">
+<div class="iDevice emphasis0" >
+<div id="ta22_116_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;"><img src="img8.png" width="334" height="99" alt="" />      </span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">      Berdasarkan ilustrasi sebelumnya adakah pertanyaan yang mungkin muncul di benak kalian? Berikut terdapat beberapa pertanyaan yang mungkin akan kalian tanyakan.</span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;"><img src="img1.2.png" width="782" height="185" alt="" /></span></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id58">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">1.1 Pemahaman Limit Fungsi secara Intuitif</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta58_112_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="img1.6.png" width="130" height="42" alt="" /></p>
+<p><span style="font-size: 14pt; font-family: 'times new roman', times, serif;">Diberikan fungsi <em>f</em>(<em>x</em>) = <em>x</em> - 1, untuk <em>x</em> <img alt="" src="eXe_LaTeX_math_0.7.gif" width="24" height="13" style="text-align: center;" />. Nilai <em>f</em>(<em>x</em>) = <em>x</em> - 1, saat <em>x</em> mendekati 2 adalah....</span></p>
+<p><span style="font-size: 14pt; font-family: 'times new roman', times, serif;"><strong>Penyelesaian:</strong></span></p>
+<p><span style="font-size: 14pt; font-family: 'times new roman', times, serif;">Cara menyelesaikan permasalahan diatas, dapat menggunakan metode numerik. Perhatikan tabel berikut.</span></p>
+<p><span style="font-size: 14pt; font-family: 'times new roman', times, serif;"><strong>Tabel 1.1. </strong> Nilai fungsi <em>f</em>(<em>x</em>) = <em>x</em> - 1 saat <em>x</em> mendekati 2</span></p>
+<p><span style="font-size: 14pt; font-family: 'times new roman', times, serif;"><img src="img3.4.png" width="605" height="128" alt="" /></span></p>
+<p><span style="font-size: 14pt; font-family: 'times new roman', times, serif;">Nilai-nilai fungsi <em>f</em>(<em>x</em>) = <em>x </em>- 1 saat <em>x</em> mendekati 2 dapat disketsa sebagai berikut.</span></p>
+<p><img src="img0.8.png" width="552" height="429" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">      Berdasarkan <strong>Tabel 1.1 </strong>dan sketsa diatas, nilai dari fungsi <em>f</em>(<em>x</em>) = <em>x</em> - 1 akan mendekati 1 saat <em>x</em> mendekati 2 dari kiri dan kanan atau dapat ditulis <img alt="" src="eXe_LaTeX_math_1.5.gif" width="80" height="28" style="text-align: center;" /> = <img alt="" src="eXe_LaTeX_math_3.5.gif" width="80" height="28" style="text-align: center;" /> = 1. Sehingga nilai limit dari <em>f</em>(x) = <em>x</em> - 1 saat <em>x</em> mendekati 2 adalah 1 atau dalam matematika dapat ditulis sebagai <img alt="" src="eXe_LaTeX_math_5.3.gif" width="72" height="25" style="text-align: center;" /> = 1.</span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;"><img src="img7.3.png" width="131" height="44" alt="" /></span></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">Amati fungsi <img alt="" src="eXe_LaTeX_math_7.5.gif" width="152" height="39" style="text-align: center;" />. Nilai <em>f</em>(<em>x</em>) saat <em>x</em> mendekati 1 adalah....</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-family: 'times new roman', times, serif;"><strong>Penyelesaian:</strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-family: 'times new roman', times, serif;"><strong>Tabel 1.2. </strong>Nilai fungsi <img alt="" src="eXe_LaTeX_math_7.5.gif" width="152" height="39" style="text-align: center;" />, saat <em>x</em> mendekati 1</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-family: 'times new roman', times, serif;"><img src="img10.3.png" width="626" height="128" alt="" /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-family: 'times new roman', times, serif;">Nilai - nilai fungsi <img alt="" src="eXe_LaTeX_math_7.5.gif" width="152" height="39" style="text-align: center;" /> saat <em>x</em> mendekati 1 dapat disketsa sebagai berikut.</span></p>
+<p><img src="img14.2.png" width="625" height="438" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;"><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">      Berdasarkan tabel dan sketsa diatas, dapat disimpulkan bahwa nilai <em>f</em>(<em>x</em>) akan mendekati 2 saat <em>x</em> mendekati 1 dari kiri, sedangakan nilai <em>f</em>(<em>x</em>) akan mendekati 4 saat <em>x</em> mendekati 1 dari kanan atau <img alt="" src="eXe_LaTeX_math_11.3.gif" width="168" height="31" style="text-align: center;" />. Dengan demikian untuk fungsi <img alt="" src="eXe_LaTeX_math_7.5.gif" width="152" height="39" style="text-align: center;" /> tidak memiliki nilai limit saat <em>x</em> mendekati 1.</span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice em_iDevice_activity" id="id59">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Cobalah soal berikut!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta59_113_2" class="block iDevice_content">
+<p><img src="img0.9.png" width="270" height="96" alt="" /></p>
+<p><span style="font-family: 'times new roman', times, serif; font-size: 14pt;"><strong>Berdasarkan dengan contoh sebelumnya, tentukan nilai dan sketsa grafik dari:</strong></span></p>
+<p><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">1. <img alt="" src="eXe_LaTeX_math_6.1.gif" width="80" height="33" style="text-align: center;" /></span></p>
+<p><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">2. <img alt="" src="eXe_LaTeX_math_8.3.gif" width="48" height="32" style="text-align: center;" /></span></p>
+<p><span style="font-family: 'times new roman', times, serif; font-size: 14pt;">3. <img alt="" src="eXe_LaTeX_math_0.14.gif" width="152" height="34" style="text-align: center;" /> untuk <em>x</em> mendekati 0</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GeoGebraIdevice em_iDevice em_iDevice_udl_exp_manipula" id="id60">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_manipula.svg)"><h1 class="iDeviceTitle">Ayo Bereksplorasi!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta60_114_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-sgbpkmdw auto-geogebra-width-1366 auto-geogebra-height-768 auto-geogebra-scale-100"><div class="auto-geogebra-instructions"><p><span style="font-size: 14pt;"><strong>Eksplorasilah nilai limit fungsi diatas melalui media berikut dan bandingkan dengan jawabanmu!</strong></span></p>
+<p><span style="text-decoration: underline; font-size: 14pt;">PETUNJUK FUNGSI RASIONAL, POLINOMIAL</span></p>
+<p><img src="img1.8.png" width="921" height="481" alt="" /></p>
+<p><span style="text-decoration: underline; font-size: 14pt;">PETUNJUK FUNGSI BERSYARAT</span></p>
+<p><span style="text-decoration: underline;"><img src="img0.4.png" width="829" height="458" alt="" /></span></p></div><p><a href="https://www.geogebra.org/m/sgbpkmdw" target="_blank">https://www.geogebra.org/m/sgbpkmdw (New Window)</a></p><div class="auto-geogebra-author js-hidden">AyuNovita,https%3A//www.geogebra.org/m/sgbpkmdw,Limit%20Fungsi,1,Authorship</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id61">
+<div class="iDevice emphasis0">
+<div id="ta61_85" class="block iDevice_content">
+<p><span style="font-size: 24pt;"><strong><span style="font-family: 'times new roman', times, serif;">Coba kalian temukan definisi dari limit fungsi!</span></strong></span><span style="font-size: 14pt; font-family: 'times new roman', times, serif;"><br /></span></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ScrambledListIdevice em_iDevice em_iDevice_udl_rep_caso" id="id106">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_caso.svg)"><h1 class="iDeviceTitle">Urutkan kalimat berikut!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta106_114_2" class="block iDevice_content">
+<div class="exe-sortableList"><div class="exe-sortableList-instructions"><p><span style="font-size: 14pt; font-family: 'times new roman', times, serif;">Berdasarkan contoh-contoh soal diatas, dapat kalian simpulkan bahwa: </span><img alt="" src="eXe_LaTeX_math_3.2.gif" width="104" height="23" style="text-align: center; font-size: 1.05em;" /><span style="font-size: 14pt; font-family: 'times new roman', times, serif;">, yaitu ...</span></p></div><ul class="exe-sortableList-list"><li>ketika x mendekati c</li><li>tetapi x tidak sama dengan c</li><li>maka nilai f(x) akan mendekati L</li></ul><div style="display:none"><p class="exe-sortableList-buttonText">Check</p><p class="exe-sortableList-rightText">Right!</p><p class="exe-sortableList-wrongText">Sorry... The right answer is:</p></div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id108">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Lengkapi kalimat berikut!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta108_115" class="block instructions iDevice_content">
+
+</section>
+
+<section class="activity" id="activity-108_116">
+<form name="cloze-form-108_116" action="#" class="activity-form cloze-form">
+<div id="cloze108_116">
+<input type="hidden" name="clozeVar108_116.feedbackId" id="clozeVar108_116.feedbackId" value="ta108_117"/>
+
+<p><span style="font-size: 14pt; font-family: 'times new roman', times, serif;">Nilai limit fungsi  
+<label for="clozeBlank108_116.0" class="sr-av">"Cloze" (1):</label>
+<select id="clozeBlank108_116.0">
+<option selected="selected"> </option><option value="sama">sama</option><option value="ada">ada</option>
+</select>
+<span style="display:none" id="clozeAnswer108_116.0">JXUwMDM5JXUwMDA1JXUwMDA1</span>
+  jika dan hanya jika nilai limit kiri dan limit kanan  
+<label for="clozeBlank108_116.1" class="sr-av">"Cloze" (2):</label>
+<select id="clozeBlank108_116.1">
+<option selected="selected"> </option><option value="sama">sama</option><option value="ada">ada</option>
+</select>
+<span style="display:none" id="clozeAnswer108_116.1">JXUwMDJiJXUwMDEyJXUwMDBjJXUwMDBj</span>
+  , atau dapat ditulis <img alt="" src="eXe_LaTeX_math_3.2.gif" width="104" height="23" style="text-align: center;"></img>jika dan hanya jika <img alt="" src="eXe_LaTeX_math_2.17.gif" width="208" height="27" style="text-align: center;"></img>.</span></p>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore108_116" value="Check"  id="getScore108_116" />
+
+<input type="button" name="feedback108_116" value="Tunjukan Umpan Balik" class="feedbackbutton cloze-feedback-toggler" />
+
+<input type="hidden" name="clozeOtras108_116" id="clozeOtras108_116" value=""/>
+
+<input type="hidden" name="clozeFlag108_116.strictMarking" id="clozeFlag108_116.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag108_116.checkCaps" id="clozeFlag108_116.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag108_116.instantMarking" id="clozeFlag108_116.instantMarking" value="false" />
+<span class="js-hidden js-warning">Enable JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore108_116"></div>
+</div>
+</form>
+</section>
+<section id="ta108_117" class="feedback js-feedback iDevice_content" style="display:none">
+<p><img src="img0.14.png" width="740" height="543" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Perizinan di bawah</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="materi_pembelajaran.html" class="prev"><span><span>&laquo; </span>Sebelumnya</span></a> <span class="sep">| </span><a href="2_sifat_limit_fungsi.html" class="next"><span>Lanjut<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
